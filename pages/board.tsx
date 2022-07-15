@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Row } from 'react-bootstrap';
-//import BoardSection from '../components/BoardSection';
+import BoardSection from '../components/BoardSection';
 import { gql, useQuery, useMutation, useLazyQuery } from '@apollo/client';
-//import { DragDropContext } from 'react-beautiful-dnd';
-//import { useSession } from "next-auth/react";
+import { DragDropContext } from 'react-beautiful-dnd';
+import { useSession } from "next-auth/react";
 
 const AllTasksQuery = gql`
   query {

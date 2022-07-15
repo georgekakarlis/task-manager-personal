@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Container, Button } from 'react-bootstrap';
 import Link from 'next/link'
-//import { useSession, signOut } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
 
 const Header = () => {
   const [name, setName] = useState<string>('');
